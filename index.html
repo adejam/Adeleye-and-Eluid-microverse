@@ -26,10 +26,26 @@
        <h1 id="title">Survey Form</h1>
        <p id="description">This is a survey form </p>
        <form id="survey-form">
-        <input type="text" name="" id="name" required />
-         <input type="email" name="" id="email" required/>
-          <input type="number" name="" id="number" required/>
-       </form>
+         <label id="name-label">Name</label>
+        <input placeholder="Type name" type="text" name="" id="name" required />
+        <label id='email-label'>Email</label>
+         <input placeholder="Type email" type="email" name="" id="email" required/>
+         <label id="number-label">Number</label>
+          <input placeholder="Enter number" type="number" name="" id="number" min="2" max="10" required/>
+           <select id="dropdown">
+               <option value="1">1</option>
+               <option value="2">2</option>
+           </select>
+           <input value="male" type="radio" name='gender'>
+           <input value="female" type="radio" name='gender'>
+           <input value="RNB" type="radio" name='genre'>
+           <input value="reggae" type="radio" name='genre'>
+           <input type="checkbox" value="1">
+           <input type="checkbox" value="2">
+           <input type="checkbox" value="3">
+           <textarea name="" id="" cols="30" rows="10"></textarea>
+           <input type="submit" id="submit">
+        </form>
     </main>
     
     <script  src="js/index.js"></script>
